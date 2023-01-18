@@ -1,5 +1,6 @@
 // src/app.js
 
+const logger = require('./logger');
 import { Auth, getUser } from './auth';
 import { getUserFragments } from './api';
 

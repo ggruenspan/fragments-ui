@@ -1,5 +1,6 @@
 // src/auth.js
 
+const logger = require('./logger');
 import { Amplify, Auth } from 'aws-amplify';
 
 // Configure our Auth object to use our Cognito User Pool
