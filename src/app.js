@@ -33,7 +33,7 @@ async function init() {
   getUserFragments(user);
 
   // Log the user info for debugging purposes
-  console.log({ user });
+  logger.debug({ user });
 
   // Update the UI to welcome the user
   userSection.hidden = false;
