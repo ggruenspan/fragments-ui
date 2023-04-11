@@ -121,7 +121,7 @@ export async function getFragmentInfo(user,id) {
   console.log(`Requesting user fragments info by id...${id}`);
   console.log(`fetching ${apiUrl}/v1/fragments/${id}/info`);
   try {
-    const res = await fetch(`${apiUrl}v1/fragments/${id}/info` , {
+    const res = await fetch(`${apiUrl}/v1/fragments/${id}/info` , {
       headers: {
         // Include the user's ID Token in the request so we're authorized
         Authorization: `Bearer ${user.idToken}`,
@@ -140,7 +140,7 @@ export async function getFragmentInfo(user,id) {
 export async function deleteFragmentDataById(user,id) {
   console.log(`Deleting user fragment by id...${id}`);
   try {
-    const res = await fetch(`${apiUrl}v1/fragments/${id}`, {
+    const res = await fetch(`${apiUrl}/v1/fragments/${id}`, {
       method: "delete",
       headers: {
         // Include the user's ID Token in the request so we're authorized
@@ -164,7 +164,7 @@ export async function updateUserFragments(user,data,type,id) {
     if(type == 'application/json'){
       data = JSON.parse(JSON.stringify(data));
     }
-    const res = await fetch(`${apiUrl}v1/fragments/${id}`, {
+    const res = await fetch(`${apiUrl}/v1/fragments/${id}`, {
       method: "put",
       headers: {
         // Include the user's ID Token in the request so we're authorized
