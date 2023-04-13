@@ -10,15 +10,15 @@ will need sign-up & sign in before testing requests.
 
 Server should start successfully on `localhost:1234` with a logger message showing the build time.
 
-## After signed-in
+<!-- ## After signed-in
 Choose the type of fragment you wish to `POST` first.
 
 `GET FRAGMENT` will return a list of fragment ids belongs to the logged in user in the console.
 
 `GET FRAGMENT EXPAND` will return a list fragment's metadata belongs to the logged in user in the console.
 
-`GET DATA` will return the fragments data in the console with respect to the fragment id provided.
+`GET DATA` will return the fragments data in the console with respect to the fragment id provided. -->
 
-`GET DATA INFO` will return the fragments metadata in the console with respect to the fragment id provided.
+<!-- `GET DATA INFO` will return the fragments metadata in the console with respect to the fragment id provided.
 
-`GET DATA` allows user to convert fragment's data from `text/markdown` to `text/html` by adding `.ext` at the end of the id.
+`GET DATA` allows user to convert fragment's data from `text/markdown` to `text/html` by adding `.ext` at the end of the id. -->
